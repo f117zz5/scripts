@@ -1,0 +1,29 @@
+
+mp3splt -t 15.00 -o @m@f -g @n@t -d hs007 hs007_shootinghappyshooting_small.mp3
+
+mplayer -ao pcm rz044-der-merkur.m4a -ao pcm:file="rz044.wav"
+
+
+lame -h -b 16 -q 0 --resample 16 000sn0375.wav test.mp3
+lame -h -b 16 -q 0 --resample 16 -m m --mp3input 00TheSugarHill-pt1-64kbps.mp3 test.mp3
+--mp3input
+
+       Filter options:
+
+       --lowpass freq
+              Set a lowpass filtering frequency in kHz.  Frequencies above the specified one will be cutoff.
+
+       --lowpass-width freq
+              Set the width of the lowpass filter.  The default value is 15% of the lowpass frequency.
+
+       --highpass freq
+              Set an highpass filtering frequency in kHz.  Frequencies below the specified one will be cutoff.
+
+       --highpass-width freq
+              Set the width of the highpass filter in kHz.  The default value is 15% of the highpass frequency.
+
+       --resample sfreq
+              sfreq = 8, 11.025, 12, 16, 22.05, 24, 32, 44.1, 48
+              Select output sampling frequency (only supported for encoding).
+              If not specified, LAME will automatically resample the input when using high compression ratios.
+
