@@ -1,0 +1,15 @@
+The suspend problem with xubuntu on my asus eee 1005ha
+https://bugs.launchpad.net/ubuntu/+source/xfce4-power-manager/+bug/1303736
+
+With regards to comment #16:
+
+I have the same problem. The mouse cursor is missing, but the mouse still works. You can see icons, tabs, buttons etc. being highlighted as the mouse passes over it.
+
+You get the pointer back though when you switch to a text tty (ALT-CTRL-F1) and then back to the GUI (ALT-CTRL-F7). You don't need to login to the text terminal.
+
+I've also found that if you disable "Lock on suspend" in the "Light Locker Settings" screen, and then manually lock the screen from the terminal with:
+
+light-locker-command -l
+
+and then close the lid so the laptop suspends, resuming works fine without the need for any workarounds.
+
