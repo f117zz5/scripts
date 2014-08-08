@@ -1,6 +1,11 @@
 
 mp3splt -t 15.00 -o @m@f -g @n@t -d hs007 hs007_shootinghappyshooting_small.mp3
 
+for autodetect, testing it for now...
+mp3splt -a -t 15.00 -o @m@f -g @n@t -d hs007 hs007_shootinghappyshooting_small.mp3
+but I am stil getting the errors 
+libmp3splt: error in splt_sp_set_splitpoint_value with value 
+
 mplayer -ao pcm rz044-der-merkur.m4a -ao pcm:file="rz044.wav"
 
 
