@@ -35,5 +35,13 @@
 	#tool = bc3
 [difftool "bc3"]
 	#path = /usr/bin/bcompare
+[http]
+	proxy = IP:Port
+[https]
+	proxy = IP:Port
+[diff]
+	tool = bc3
+[mergetool "bc3"]
+	path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
 [push]
 	default = simple
