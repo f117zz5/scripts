@@ -1,10 +1,12 @@
-Some examples
+# Some examples
  
-Create bare repository on the server:
- 
+## Create bare repository on the server:
+
+```
 mkdir my_project.git
 cd my_project.git
 git init --bare
+```
  
 then in the existing local repository
 git remote add origin URL
