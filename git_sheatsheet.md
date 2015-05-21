@@ -9,7 +9,7 @@ git init --bare
 ```
  
 Then in the existing local repository one should add the remote repository that was 
-just created. In this example the remote repository will be known in the local one as __master.
+just created. In this example the remote repository will be known in the local one as _master_.
 ```
 git remote add origin URL
 git push origin master
