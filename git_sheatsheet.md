@@ -37,7 +37,13 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/9537392/git-f
 ```
 git checkout -b [branch] [remotename]/[branch]
 ```
+after doing this I had to [set up the tracking explicitly](http://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch):
+```
+git br --set-upstream-to=remotename]/[branch] [branch]
+```
+
 ot the short-hand command just for tracking a branch
 ```
 git checkout --track origin/daves_branch
 ```
+
