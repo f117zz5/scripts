@@ -30,3 +30,14 @@ push a single tag:
 ```
 git push origin <tag_name>
 ```
+
+## Check out additional remote repository to a local branch
+Stackoverflow discussion [here](http://stackoverflow.com/questions/9537392/git-fetch-remote-branch).
+
+```
+git checkout -b [branch] [remotename]/[branch]
+```
+ot the short-hand command just for tracking a branch
+```
+git checkout --track origin/daves_branch
+```
