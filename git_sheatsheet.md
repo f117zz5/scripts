@@ -46,4 +46,7 @@ ot the short-hand command just for tracking a branch
 ```
 git checkout --track origin/daves_branch
 ```
-
+Check if remote repository has been updated (if pull needed). Stackoverflow discussion [here](http://stackoverflow.com/questions/3258243/git-check-if-pull-needed)
+```
+git remote -v update
+```
