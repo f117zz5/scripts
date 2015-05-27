@@ -50,3 +50,16 @@ Check if remote repository has been updated (if pull needed). Stackoverflow disc
 ```
 git remote -v update
 ```
+
+## Clean up
+
+Stackoverflow discussion [here](http://stackoverflow.com/questions/61212/remove-local-untracked-files-from-my-current-git-branch)
+
+First test it:
+```
+git clean -f -n
+```
+And then remove all non-tracked files and folders:
+```
+git clean -fd
+```
