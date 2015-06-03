@@ -63,3 +63,10 @@ And then remove all non-tracked files and folders:
 ```
 git clean -fd
 ```
+
+## Export
+
+Stackoverflow discussion [here](http://stackoverflow.com/questions/160608/do-a-git-export-like-svn-export)
+```
+git archive --format zip --output /full/path/to/zipfile.zip master
+```
