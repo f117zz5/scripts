@@ -57,7 +57,7 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/61212/remove-
 
 First test it:
 ```
-git clean -f -n
+git clean -fd -n
 ```
 And then remove all non-tracked files and folders:
 ```
