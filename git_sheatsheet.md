@@ -70,3 +70,9 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/160608/do-a-g
 ```
 git archive --format zip --output /full/path/to/zipfile.zip master
 ```
+
+## Remove deleted files
+Stackoverflow discussion [here](http://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
+```
+git rm $(git ls-files --deleted) 
+```
