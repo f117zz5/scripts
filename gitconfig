@@ -31,17 +31,17 @@
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     ls = ls-files
     ign = ls-files -o -i --exclude-standard
-[diff]
-	#tool = bc3
-[difftool "bc3"]
-	#path = /usr/bin/bcompare
-[http]
-	proxy = IP:Port
-[https]
-	proxy = IP:Port
-[diff]
-	tool = bc3
-[mergetool "bc3"]
-	path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
-[push]
-	default = simple
+#[diff]
+#	#tool = bc3
+#[difftool "bc3"]
+#	#path = /usr/bin/bcompare
+#[http]
+#	proxy = IP:Port
+#[https]
+#	proxy = IP:Port
+#[diff]
+#	tool = bc3
+#[mergetool "bc3"]
+#	path = C:/Program Files (x86)/Beyond Compare 3/BComp.exe
+#[push]
+#	default = simple
