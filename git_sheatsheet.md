@@ -84,6 +84,21 @@ To keep the files in the repository, but not caring of them being changed anymor
 git update-index --assume-unchanged [path]
 ```
 
+To see which files are --assume-unchanged:
+```
+git ls-files -v
+```
+Those are the one with lower letters.
+One can also use (link [here](http://stackoverflow.com/questions/2363197/can-i-get-a-list-of-files-marked-assume-unchanged)):
+```
+git ls-files -v | grep '^[[:lower:]]'
+```
+or
+```
+[alias]
+    ignored = !git ls-files -v | grep "^[[:lower:]]"
+```
+
 
 ## Remove deleted files
 Stackoverflow discussion [here](http://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
