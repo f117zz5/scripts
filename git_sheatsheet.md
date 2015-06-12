@@ -71,6 +71,20 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/160608/do-a-g
 git archive --format zip --output /full/path/to/zipfile.zip master
 ```
 
+## Stop tracking and ignore changes to a file in Git
+Stackoverflow discussion [here](http://stackoverflow.com/questions/936249/stop-tracking-and-ignore-changes-to-a-file-in-git)
+Just run
+```
+git rm --cached
+```
+on the file that should be removed. But this will also remove the files from the repository.
+
+To keep the files in the repository, but not caring of them being changed anymore, do:
+```
+git update-index --assume-unchanged [path]
+```
+
+
 ## Remove deleted files
 Stackoverflow discussion [here](http://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
 ```
