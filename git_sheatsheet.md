@@ -50,6 +50,19 @@ Check if remote repository has been updated (if pull needed). Stackoverflow disc
 ```
 git remote -v update
 ```
+Rename a remote repository. Stackoverflow discussion [here](http://stackoverflow.com/questions/2432764/change-the-uri-url-for-a-remote-git-repository)
+```
+git remote set-url origin git://new.url.here
+```
+
+Delete a branch from the remote server. Stackoverflow discussion [here](http://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely)
+```
+git push origin --delete <branchName>
+```
+or
+```
+git push origin :<branchName>
+```
 
 ## Clean up
 
