@@ -39,8 +39,17 @@ git checkout -b [branch] [remotename]/[branch]
 ```
 after doing this I had to [set up the tracking explicitly](http://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch):
 ```
-git br --set-upstream-to=remotename]/[branch] [branch]
+git br --set-upstream-to=[remotename]/[branch] [branch]
 ```
+or a shorter forma
+```
+git br --set-upstream branch remotename/branch
+```
+Please note, after adding a remote, it should be fetched. Link [here](http://stackoverflow.com/questions/14717957/why-does-git-not-recognize-origin-master-as-a-valid-object-name)
+```
+git remote add remotename URL
+git fetch remotename
+ ```
 
 ot the short-hand command just for tracking a branch
 ```
