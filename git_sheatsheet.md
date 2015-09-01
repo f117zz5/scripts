@@ -76,7 +76,7 @@ Remove a reference of a deleted remote brunch. Stackoverflow discussion [here](h
 ```
 git remote prune origin --dry-run
 ```
-First test tne then reomove the `--dry-run` to do the actual job.
+First test the then remove the `--dry-run` to do the actual job.
 
 ## Clean up
 
