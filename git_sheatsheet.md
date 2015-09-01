@@ -72,6 +72,11 @@ or
 ```
 git push origin :<branchName>
 ```
+Remove a reference of a deleted remote brunch. Stackoverflow discussion [here](http://stackoverflow.com/questions/6930147/git-pull-displays-fatal-couldnt-find-remote-ref-refs-heads-xxxx-and-hangs-up)
+```
+git remote prune origin --dry-run
+```
+First test tne then reomove the (--dry-run) to do the actual job.
 
 ## Clean up
 
