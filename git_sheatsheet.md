@@ -132,3 +132,9 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/492558/removi
 ```
 git rm $(git ls-files --deleted) 
 ```
+
+## Git configuration
+Set Notepad++ as a default editor in Windows. Stackoverflow discussion [here](http://stackoverflow.com/questions/1634161/how-do-i-use-notepad-or-other-with-msysgit/2486342#2486342)
+```
+git config --global core.editor "'C:\path_to\notepadpp\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
