@@ -133,6 +133,12 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/492558/removi
 git rm $(git ls-files --deleted) 
 ```
 
+## Revert past already pushed erroneous commit
+Stackoverflow discussion [here](http://stackoverflow.com/questions/2318777/undo-a-particular-commit-in-git-thats-been-pushed-to-remote-repos)
+```
+git revert hashtag -n 
+```
+
 ## Git configuration
 Set Notepad++ as a default editor in Windows. Stackoverflow discussion [here](http://stackoverflow.com/questions/1634161/how-do-i-use-notepad-or-other-with-msysgit/2486342#2486342)
 ```
