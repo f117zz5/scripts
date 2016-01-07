@@ -147,7 +147,7 @@ git diff --name-status [HashTag1]..[HashTag2]
 ```
 List only the modified files, not the deleted and added ones.
 ```
-git diff --diff-filter=M [HashTag1]..[HashTag2]
+git diff --name-only --diff-filter=M [HashTag1]..[HashTag2]
 ```
 
 ## Git configuration
