@@ -139,6 +139,17 @@ Stackoverflow discussion [here](http://stackoverflow.com/questions/2318777/undo-
 git revert hashtag -n 
 ```
 
+## Compare different commits
+Stackoverflow discussion [here](http://stackoverflow.com/questions/6944264/git-diff-show-only-diff-for-files-that-exist-in-both-commits)
+Get the list of the altered files with status information showing what has changed.
+```
+git diff --name-status [HashTag1]..[HashTag2]
+```
+List only the modified files, not the deleted and added ones.
+```
+git diff --diff-filter=M [HashTag1]..[HashTag2]
+```
+
 ## Git configuration
 Set Notepad++ as a default editor in Windows. Stackoverflow discussion [here](http://stackoverflow.com/questions/1634161/how-do-i-use-notepad-or-other-with-msysgit/2486342#2486342)
 ```
