@@ -155,3 +155,14 @@ Set Notepad++ as a default editor in Windows. Stackoverflow discussion [here](ht
 ```
 git config --global core.editor "'C:\path_to\notepadpp\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
+
+## Git statistics
+Get the hash tag of teh first commit. Stackoverflow discussion [here](http://stackoverflow.com/questions/1006775/how-to-reference-the-initial-commit)
+```
+git rev-list --max-parents=0 HEAD
+```
+
+Get number of commits between commits. Stackoverflow discussion [here](http://stackoverflow.com/questions/1486819/which-git-commit-stats-are-easy-to-pull)
+```
+git shortlog -sne
+```
