@@ -187,13 +187,13 @@ Host github.com-jexchan
 	IdentityFile ~/.ssh/id_rsa_jexchan
 ```
 
-Start the ass-agent
+Start the ass-agent and add a key
 ```
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 ```
 
-Then add a ssh link to the github repository - [likk](https://help.github.com/articles/changing-a-remote-s-url/) here
+Then add a ssh link to the github repository - [link](https://help.github.com/articles/changing-a-remote-s-url/) here
 ```
 git@github.com:USERNAME/REPOSITORY.git
 ```
