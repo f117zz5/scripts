@@ -166,3 +166,34 @@ Get number of commits between commits. Stackoverflow discussion [here](http://st
 ```
 git shortlog -sne
 ```
+
+## Configure ssh keys for different accounts/servers
+Original Gist [here](https://gist.github.com/jexchan/2351996)
+```
+$ cd ~/.ssh/
+$ touch config
+$ subl -a config
+
+#activehacker account
+Host github.com-activehacker
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_activehacker
+
+#jexchan account
+Host github.com-jexchan
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_jexchan
+```
+
+Start the ass-agent
+```
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+```
+
+Then add a ssh link to the github repository - [likk](https://help.github.com/articles/changing-a-remote-s-url/) here
+```
+git@github.com:USERNAME/REPOSITORY.git
+```
