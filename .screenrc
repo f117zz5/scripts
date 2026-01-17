@@ -1,0 +1,18 @@
+# Skip the startup message
+startup_message off
+
+# Disable visual bell (flashing screen)
+vbell off
+
+# Enable status bar at the bottom
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= ][ %{g}%Y-%m-%d %{W}%c %{g}]'
+
+# Alternative "cleaner" look if you prefer:
+# hardstatus string '%{= bK}%-w%{= kw}%n %t%{= bK}%+w %=%H %Y-%m-%d %c'
+
+# Increase scrollback buffer
+defscrollback 5000
+
+# Enable mouse scrolling (termcapinfo might vary by terminal, but this is common)
+termcapinfo xterm* ti@:te@
